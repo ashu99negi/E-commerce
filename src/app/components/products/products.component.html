@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let product of products">
+      <div class="card col-md-3">
+        <img
+          src="{{product.image}}"
+          alt=""
+        />
+        <h5 class="h1">{{product.description}}</h5>
+        <p><strong>Amount:</strong> Rs.{{product.price}}/-</p>
+        <button class="btn btn-dark" (click)="addToCart(product)">Add to cart</button>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+{
+  "signup": [
+    {
+      "firstName": "Ashish",
+      "lastName": "Negi",
+      "userName": "negi99ashish",
+      "password": "WsW219@1",
+      "id": 1
+    },
+    {
+      "firstName": "ansh",
+      "lastName": "Payal",
+      "userName": "payalAnsh99",
+      "password": "WsW219@1",
+      "id": 2
+    }
+  ],
+  "profile": [
+    {
+      "firstName": "Ashish",
+      "lastName": "Negi",
+      "userName": "negi99ashish",
+      "password": "WsW219@1",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "image": "https://cdn.shopify.com/s/files/1/0633/2507/7729/products/5copy_1120x.jpg?v=1658915930",
+      "description": "SXV 'LOS ANGELES' Printed Hoodie",
+      "price": 699
+    },
+    {
+      "id": "2",
+      "image": "https://www.redwolf.in/image/cache/catalog/sweatshirts/spider-man-logo-hoodie-india-700x700.jpg",
+      "description": "SPIDER-MAN LOGO - MARVEL OFFICIAL HOODIE",
+      "price": 999
+    },
+    {
+      "id": "3",
+      "image": "https://m.media-amazon.com/images/I/51sL-5sJ7hL._UX569_.jpg",
+      "description": "ADRO Men's Cotton New York Design Printed Hooded Neck Hoodie Sweatshirt",
+      "price": 899
+    },
+    {
+      "id": "4",
+      "image": "https://images.meesho.com/images/products/159993552/vtxwx_512.webp",
+      "description": "SALTLAKE Trendy Stylish Mens Hoodies Sweatshirt | Clothing for men",
+      "price": 434
+    },
+    {
+      "id": "5",
+      "image": "https://m.media-amazon.com/images/I/5153Xif7t4L._UY879_.jpg",
+      "description": "FUNKY MONKEY BTS Purple Women's Regular Hoodie",
+      "price": 749
+    },
+    {
+      "id": "6",
+      "image": "https://m.media-amazon.com/images/I/61s35wJqfTL._AC_UL1500_.jpg",
+      "description": "Men's Fashion Trends Hoodies Hip Hop Patchwork Sweater Hoodie Top",
+      "price": 1299
+    }
+  ],
+  "cart": []
+}

@@ -1,0 +1,42 @@
+<div class="container">
+    <h2 class="h2">Login</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">
+      <mat-form-field>
+        <input
+          matInput
+          id="Uname"
+          placeholder="Username"
+          formControlName="userName"
+        />
+      </mat-form-field>
+      <br />
+      <mat-form-field>
+        <input
+          matInput
+          id="Pword"
+          placeholder="Password"
+          type="password"
+          formControlName="password"
+        />
+      </mat-form-field>
+      <br />
+      <button
+        mat-button
+        [disabled]="!loginForm.valid"
+        id="Lbtn"
+        mat-raised-button
+        type="submit"
+      >
+        LOGIN
+      </button>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+    </form>
+    <button mat-button id="Rbtn" (click)="openSignup()">
+      Create New Account
+    </button>
+  </div>
+  

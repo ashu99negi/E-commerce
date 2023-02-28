@@ -1,0 +1,52 @@
+<ng-container *ngIf="products.length !== 0">
+  <div class="container">
+    <div class="card-table">
+      <div class="card-product">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>SL.No</th>
+              <th>Product Image</th>
+              <th>Product Description</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let product of products; let i = index">
+            <tr>
+              <td>{{ i + 1 }}</td>
+              <td>
+                <img style="width: 50px" src="{{ product.image }}" />
+              </td>
+              <td>{{ product.description }}</td>
+              <td>{{ product.price }}</td>
+              <td>{{ product.quantity }}</td>
+              <td>{{ product.total }}</td>
+              <td>
+                <button class="btn btn-danger" (click)="removeItem(product)">
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+          <td colspan="4"></td>
+          <td>
+            <button routerLink="/products" class="btn btn-success">
+              Search more Hoodies
+            </button>
+          </td>
+          <td><strong>Total: {{totalPrice}}</strong></td>
+        </table>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="products.length == 0">
+  <div class="center">
+    <h2>Your cart is Empty</h2>
+    <a routerLink="/products"> Add item</a>
+  </div>
+</ng-container>

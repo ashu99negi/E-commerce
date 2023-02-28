@@ -1,0 +1,47 @@
+<div>
+    <div class="container">
+      <h2>Register</h2>
+      <form [formGroup]="signUpForm" (ngSubmit)="onSubmit(signUpForm)">
+        <mat-form-field>
+          <input matInput placeholder="First Name" formControlName="firstName" />
+        </mat-form-field>
+        <br />
+        <mat-form-field>
+          <input matInput placeholder="Last Name" formControlName="lastName" />
+        </mat-form-field>
+        <br />
+        <mat-form-field>
+          <input matInput placeholder="Username" formControlName="userName" />
+        </mat-form-field>
+        <br />
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="Password"
+            type="password"
+            formControlName="password"
+          />
+        </mat-form-field>
+        <br />
+        <button
+          mat-button
+          [disabled]="!signUpForm.valid"
+          mat-raised-button
+          id="Sbtn"
+          type="submit"
+        >
+          SignUp
+        </button>
+      </form>
+      <br />
+      <button
+        mat-button
+        mat-raised-button
+        id="Lbtn"
+        (click)="navigateToLoginPage()"
+      >
+        Back
+      </button>
+    </div>
+  </div>
+  
