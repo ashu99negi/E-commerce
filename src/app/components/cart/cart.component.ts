@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CartService } from '../../services/cart.service';
 import { AuthService } from '../../services/auth.service';
+import { Product } from '../product';
 
 @Component({
   selector: 'app-cart',
@@ -8,31 +9,30 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent {
-  products: Array<any> = [];
+  products: Product[] = [];
   totalPrice: number = 0;
   constructor(private cartService: CartService, private authService: AuthService) {}
 
   ngOnInit(): void {
-  this.authService.isLoggedIn();
+  // this.authService.isLoggedIn();
    this.getCartItems();
   }
 
   getCartItems() {
     this.cartService.getProduct().subscribe((res: any) => {
       this.products = res;
-      console.log(this.products.length); 
+      console.log(this.products); 
       this.totalPrice = this.cartService.getTotalPrice();
       console.log(this.totalPrice,"*******");
     })
   }
 
-  removeItem(product: any) {
-    console.log(product);
-    
+  removeItem(product: Product) {
+    debugger;
     this.cartService.deleteItem(product.id).subscribe((res) => {
-      alert("Todo deleted");
+      console.log(res,"res");
       this.getCartItems();
-      window.location.reload();
+      // window.location.reload();
     });
   }
 }

@@ -17,11 +17,11 @@
   ],
   "profile": [
     {
-      "firstName": "Ashish",
-      "lastName": "Negi",
-      "userName": "negi99ashish",
+      "firstName": "ansh",
+      "lastName": "Payal",
+      "userName": "payalAnsh99",
       "password": "WsW219@1",
-      "id": 1
+      "id": 2
     }
   ],
   "products": [
@@ -62,5 +62,14 @@
       "price": 1299
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "2",
+      "image": "https://www.redwolf.in/image/cache/catalog/sweatshirts/spider-man-logo-hoodie-india-700x700.jpg",
+      "description": "SPIDER-MAN LOGO - MARVEL OFFICIAL HOODIE",
+      "price": 999,
+      "quantity": 1,
+      "total": 999
+    }
+  ]
 }

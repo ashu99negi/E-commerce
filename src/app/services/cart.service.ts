@@ -7,6 +7,7 @@ import { map } from 'rxjs/operators';
 })
 export class CartService {
   cartItems: any = [];
+  url = "http://localhost:3000/cart"
   constructor(private http: HttpClient) {}
 
   getProduct() {
@@ -20,10 +21,6 @@ export class CartService {
   }
 
   addToCart(product: any) {
-    // this.cartItems.push(product);
-    console.log(this.cartItems);
-    // this.productList.next(this.cartItems);
-    // this.getTotalPrice();
     return this.http.post<any>('http://localhost:3000/cart', product).pipe(
       map((res: any) => {
         console.log(res, '*******');
